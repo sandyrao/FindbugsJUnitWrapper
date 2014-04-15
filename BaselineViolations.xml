@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.3" sequence="0" timestamp="1397414217104" analysisTimestamp="1397414223480" release="">
+  <Project projectName="">
+    <Jar>D:\Dev\Workspaces\Java_WS_Cassowary\findbugsWrapper</Jar>
+  </Project>
+<!--   <BugInstance type="DM_EXIT" priority="2" abbrev="Dm" category="BAD_PRACTICE">
+    <Class classname="MalitiaActus">
+      <SourceLine classname="MalitiaActus" start="1" end="5" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
+    </Class>
+    <Method classname="MalitiaActus" name="admodumEnim" signature="()V" isStatic="false">
+      <SourceLine classname="MalitiaActus" start="3" end="5" startBytecode="0" endBytecode="62" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
+    </Method>
+    <SourceLine classname="MalitiaActus" start="4" end="4" startBytecode="9" endBytecode="9" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
+  </BugInstance> -->
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="MalitiaActus">
+      <SourceLine classname="MalitiaActus" start="1" end="5" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
+    </Class>
+    <Method classname="MalitiaActus" name="admodumEnim" signature="()V" isStatic="false">
+      <SourceLine classname="MalitiaActus" start="3" end="5" startBytecode="0" endBytecode="62" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Byte" start="324" end="326" startBytecode="0" endBytecode="46" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="valueOf" signature="(Ljava/lang/String;)Ljava/lang/Byte;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Byte" start="208" end="208" startBytecode="0" endBytecode="30" sourcefile="Byte.java" sourcepath="java/lang/Byte.java"/>
+    </Method>
+    <SourceLine classname="MalitiaActus" start="3" end="3" startBytecode="5" endBytecode="5" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N">
+    <Class classname="org.marcoszenfold.junit.ext.findbugs.FindbugsWrapper">
+      <SourceLine classname="org.marcoszenfold.junit.ext.findbugs.FindbugsWrapper" start="12" end="41" sourcefile="FindbugsWrapper.java" sourcepath="org/marcoszenfold/junit/ext/findbugs/FindbugsWrapper.java"/>
+    </Class>
+    <Method classname="org.marcoszenfold.junit.ext.findbugs.FindbugsWrapper" name="setupStreams" signature="()V" isStatic="false">
+      <SourceLine classname="org.marcoszenfold.junit.ext.findbugs.FindbugsWrapper" start="34" end="37" startBytecode="0" endBytecode="94" sourcefile="FindbugsWrapper.java" sourcepath="org/marcoszenfold/junit/ext/findbugs/FindbugsWrapper.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="62" end="63" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="org.marcoszenfold.junit.ext.findbugs.FindbugsWrapper" start="35" end="35" startBytecode="27" endBytecode="27" sourcefile="FindbugsWrapper.java" sourcepath="org/marcoszenfold/junit/ext/findbugs/FindbugsWrapper.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 14 Apr 2014 00:06:57 +0530" total_classes="2" referenced_classes="27" total_bugs="3" total_size="32" num_packages="2" vm_version="20.13-b02" cpu_seconds="5.60" clock_seconds="2.00" peak_mbytes="62.92" alloc_mbytes="1809.81" gc_seconds="0.03" priority_2="2" priority_1="1">
+    <PackageStats package="" total_bugs="2" total_types="1" total_size="7" priority_2="2">
+      <ClassStats class="MalitiaActus" sourceFile="MalitiaActus.java" interface="false" size="7" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <PackageStats package="org.marcoszenfold.junit.ext.findbugs" total_bugs="1" total_types="1" total_size="25" priority_1="1">
+      <ClassStats class="org.marcoszenfold.junit.ext.findbugs.FindbugsWrapper" sourceFile="FindbugsWrapper.java" interface="false" size="25" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="260" invocations="342" avgMicrosecondsPerInvocation="762" maxMicrosecondsPerInvocation="19025" standardDeviationMircosecondsPerInvocation="2061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="114" invocations="27" avgMicrosecondsPerInvocation="4225" maxMicrosecondsPerInvocation="23089" standardDeviationMircosecondsPerInvocation="5803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="85" invocations="65" avgMicrosecondsPerInvocation="1315" maxMicrosecondsPerInvocation="7251" standardDeviationMircosecondsPerInvocation="1212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="6" avgMicrosecondsPerInvocation="13008" maxMicrosecondsPerInvocation="76384" standardDeviationMircosecondsPerInvocation="28345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="67" invocations="343" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="511" standardDeviationMircosecondsPerInvocation="93"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="50" invocations="299" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="2720" standardDeviationMircosecondsPerInvocation="328"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="37" invocations="27" avgMicrosecondsPerInvocation="1379" maxMicrosecondsPerInvocation="6354" standardDeviationMircosecondsPerInvocation="1671"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="33" invocations="27" avgMicrosecondsPerInvocation="1255" maxMicrosecondsPerInvocation="8185" standardDeviationMircosecondsPerInvocation="2129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="26" invocations="35" avgMicrosecondsPerInvocation="764" maxMicrosecondsPerInvocation="11483" standardDeviationMircosecondsPerInvocation="1956"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="26" invocations="27" avgMicrosecondsPerInvocation="974" maxMicrosecondsPerInvocation="7329" standardDeviationMircosecondsPerInvocation="1527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="25" invocations="27" avgMicrosecondsPerInvocation="953" maxMicrosecondsPerInvocation="4369" standardDeviationMircosecondsPerInvocation="1178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="24" invocations="27" avgMicrosecondsPerInvocation="897" maxMicrosecondsPerInvocation="4880" standardDeviationMircosecondsPerInvocation="1332"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="21" invocations="6" avgMicrosecondsPerInvocation="3600" maxMicrosecondsPerInvocation="17671" standardDeviationMircosecondsPerInvocation="6331"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
