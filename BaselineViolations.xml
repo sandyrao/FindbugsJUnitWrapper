@@ -12,7 +12,7 @@
       <SourceLine classname="MalitiaActus" start="3" end="5" startBytecode="0" endBytecode="62" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
     </Method>
     <SourceLine classname="MalitiaActus" start="4" end="4" startBytecode="9" endBytecode="9" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
-  </BugInstance> -->
+  </BugInstance> --> 
   <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE">
     <Class classname="MalitiaActus">
       <SourceLine classname="MalitiaActus" start="1" end="5" sourcefile="MalitiaActus.java" sourcepath="MalitiaActus.java"/>
